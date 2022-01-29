@@ -68,13 +68,13 @@ const Movies = () => {
             label: "Rank",
             path: "id",
             sorting: true,
-            content: (movie, key) => <td key={key}>{movie[key]}</td>,
+            content: (movie, key) => <td key={key}>{movie[key]}.</td>,
         },
         {
             label: "Titles",
             path: "title",
             sorting: true,
-            content: (movie, key) => <td key={key}>{movie[key]}</td>,
+            content: (movie, key) => <td key={key} style={{color : 'blue'}}>{movie[key]} <span style={{color : 'black'}}> ({movie["year"]})</span></td>,
         },
         {
             label: "Poster",
